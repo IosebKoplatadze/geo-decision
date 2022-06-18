@@ -1,0 +1,27 @@
+{
+  "name": "geo-decision",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IosebKoplatadze/geo-decision.git"
+  },
+  "keywords": [
+    "Georgia"
+  ],
+  "author": "Ioseb Koplatadze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IosebKoplatadze/geo-decision/issues"
+  },
+  "homepage": "https://github.com/IosebKoplatadze/geo-decision#readme",
+  "devDependencies": {
+    "parcel": "^2.6.1"
+  }
+}
