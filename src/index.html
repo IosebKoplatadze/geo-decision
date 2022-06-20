@@ -2,78 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Geo Decision</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.scss" />
+    <!-- <link rel="stylesheet" href="./style.scss" /> -->
   </head>
   <body>
-    <div class="bg-container">
-      <div class="upside">
-        <span class="bg-img bg-img-2"></span>
-        <!-- <span class="bg-img bg-img-1"></span> -->
-        <div class="bg-cover"></div>
-        <div class="bg-separator"></div>
-      </div>
-      <div class="downside">
-        <span class="bg-img bg-img-2"></span>
-        <!-- <span class="bg-img bg-img-1"></span> -->
-        <div class="bg-cover"></div>
-        <div class="bg-separator"></div>
-      </div>
-    </div>
-
-    <script>
-      const bg1 = document.querySelector('.bg-img-1');
-      const cover = document.querySelector('.bg-cover');
-      const separator = document.querySelector('.bg-separator');
-
-      let throttleTimer, lastCursorX;
-
-      const throttle = (cursorX, time) => {
-        if (throttleTimer) {
-          lastCursorX = cursorX;
-          return;
-        }
-
-        throttleTimer = true;
-        setTimeout(() => {
-          if (lastCursorX) {
-            updateSeparator(lastCursorX);
-          }
-          throttleTimer = false;
-        }, time);
-        updateSeparator(cursorX);
-        lastCursorX = null;
-      };
-
-      cover.addEventListener('mouseenter', function () {
-        bg1.style.transition = 'initial';
-      });
-
-      cover.addEventListener('mousemove', function (e) {
-        const cursorX = e.clientX - cover.getBoundingClientRect().left;
-        throttle(cursorX, 33);
-      });
-
-      function updateSeparator(cursorX) {
-        console.log(
-          '🚀 ~ file: index.html ~ line 51 ~ updateSeparator ~ cursorX',
-          cursorX
-        );
-        requestAnimationFrame(() => {
-          const containerWidth = cover.offsetWidth;
-          const percentage = (cursorX / containerWidth) * 100;
-
-          separator.style.left = `${cursorX}px`;
-          bg1.style.width = percentage + '%';
-        });
-      }
-
-      cover.addEventListener('mouseleave', function () {
-        bg1.style.transition = 'width 0.3s';
-        bg1.style.width = '50%';
-      });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
