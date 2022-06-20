@@ -8,7 +8,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy": "parcel build",
+    "predeploy": "parcel build --public-url /geo-decision/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
