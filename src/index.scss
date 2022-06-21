@@ -109,3 +109,18 @@ $speed: 6s;
     transform: translateY(calc(100vh - 100%));
   }
 }
+
+.text-barbed {
+  font-family: 'BARBEDWIRE', sans-serif;
+}
+
+.text-sanet {
+  font-family: 'ALK Sanet', sans-serif;
+}
+
+@font-face {
+  font-family: 'BARBEDWIRE';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/WiredSaji-68q1.ttf') format('truetype');
+}

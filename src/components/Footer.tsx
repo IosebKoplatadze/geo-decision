@@ -1,13 +1,21 @@
-const Footer = () => (
-  <footer className="absolute top-0 right-0 h-full flex flex-col justify-center z-20 pointer-events-none mix-blend-difference">
-    <div className="relative -rotate-90 -right-24 sm:-right-28 text-[8px] sm:text-[10px] text-amber-800">
-      <p>© 2022</p>
-      <p>By Ioseb Koplatadze</p>
-      <i className="text-[10px] sm:text-xs">
-        I'm Georgian, and therefore I am European
-      </i>
-    </div>
-  </footer>
-);
+import { useI18n } from '@solid-primitives/i18n';
+import LangSwitcher from './LangSwitcher';
+
+const Footer = () => {
+  const [t] = useI18n();
+
+  return (
+    <footer className="absolute top-0 right-0 h-full flex flex-col justify-center z-20  mix-blend-difference pointer-events-none">
+      <div className="relative -rotate-90 -right-24 sm:-right-28 text-amber-800 flex items-center ">
+        <LangSwitcher />
+        <div className=" text-[8px] sm:text-[10px] ">
+          <p>© 2022</p>
+          <p>{t('ByIosebKoplatadze')}</p>
+          <i className="text-[10px] sm:text-xs">{t('IAmGeorgian')}</i>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
