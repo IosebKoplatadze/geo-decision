@@ -33,7 +33,7 @@ const App = () => (
         </span>
         <span className="absolute word -translate-x-1/2 bottom-0">USSR</span>
       </div>
-      <img src="./war.svg" className="absolute -bottom-24" />
+      <img src="./war.svg" className="absolute bottom-0" />
     </button>
     <marquee
       className="w-full h-full absolute top-0 left-0 z-20 mix-blend-difference pointer-events-none"
