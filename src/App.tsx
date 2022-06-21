@@ -1,9 +1,32 @@
 const App = () => {
   return (
     <div className="h-screen flex flex-col justify-between font-mono">
+      <div className="relative h-20 ">
+        <div class="ocean2 z-10">
+          <div class="wave2"></div>
+          <div class="wave2"></div>
+          <div class="wave2"></div>
+        </div>
+      </div>
       <button className="h-1/2 text-9xl bg-[#0000FF] text-white">EUROPE</button>
+      <button
+        className="h-1/2 text-9xl bg-[#FF0000]"
+        style="filter: contrast(25);"
+      >
+        <div className="relative">
+          <span className="absolute word">OLIGARCHY</span>
+          <span className="absolute word">USSR</span>
+        </div>
+      </button>
+      <div className="relative h-20 ">
+        <div class="ocean z-10" style="filter: contrast(25);">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
       <marquee
-        className="w-full h-full absolute top-0 left-0 z-20 mix-blend-difference"
+        className="w-full h-full absolute top-0 left-0 z-20 mix-blend-difference pointer-events-none"
         behavior="alternate"
         direction="down"
         truespeed="true"
@@ -18,27 +41,6 @@ const App = () => {
           <div className="relative text-[#FF00FF]">What is your decision?</div>
         </marquee>
       </marquee>
-      <div className="relative h-20 ">
-        <div class="ocean z-10" style="filter: contrast(25);">
-          <div class="wave"></div>
-          <div class="wave"></div>
-          <div class="wave"></div>
-        </div>
-        <div class="ocean2 z-10">
-          <div class="wave2"></div>
-          <div class="wave2"></div>
-          <div class="wave2"></div>
-        </div>
-      </div>
-      <button
-        className="h-1/2 text-9xl bg-[#FF0000]"
-        style="filter: contrast(25);"
-      >
-        <div className="relative">
-          <span className="absolute word">OLIGARCHY</span>
-          <span className="absolute word">USSR</span>
-        </div>
-      </button>
     </div>
   );
 };

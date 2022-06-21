@@ -45,16 +45,16 @@ $speed: 6s;
   width: 100%;
   overflow-x: hidden;
   position: absolute;
-  top: 25px;
+  // top: 25px;
+  transform: rotate(180deg);
 }
 
 .ocean2 {
   height: 100%; /* change the height of the waves here */
   width: 100%;
   overflow-x: hidden;
-  transform: rotate(180deg);
   position: absolute;
-  top: -25px;
+  // top: -25px;
 }
 
 .wave {
