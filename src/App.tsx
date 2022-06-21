@@ -16,7 +16,7 @@ const App = () => (
         <div class="wave2"></div>
         <div class="wave2"></div>
       </div>
-      <div class="ocean z-10" style="filter: contrast(25);">
+      <div class="ocean z-10" style="filter: contrast(3);">
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
@@ -25,7 +25,7 @@ const App = () => (
 
     <button
       className="h-1/2 relative bg-gradient-to-b from-[#531212] to-red-900 cursor-s-resize text-4xl  sm:text-7xl md:text-8xl"
-      style="filter: contrast(3); font-family: 'BARBEDWIRE', sans-serif;"
+      style="filter: contrast(3); font-family: 'BARBEDWIRE', sans-serif; line-height: inherit;"
     >
       <div className="relative text-[#FF0000] ">
         <span className="absolute word -translate-x-1/2 bottom-0">
@@ -39,12 +39,13 @@ const App = () => (
       className="w-full h-full absolute top-0 left-0 z-20 mix-blend-difference pointer-events-none"
       behavior="alternate"
       direction="down"
-      truespeed="true"
-      scrolldelay="30"
+      // truespeed="true"
+      // scrolldelay="30"
     >
       <marquee
         className=" text-white text-lg  sm:text-2xl md:text-4xl lg:text-5xl -top-6"
         behavior="alternate"
+        // scrollamount="3"
         truespeed="true"
         scrolldelay="30"
       >
