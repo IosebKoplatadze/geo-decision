@@ -1,8 +1,8 @@
 import Footer from './components/Footer';
 
 const App = () => (
-  <div className="h-screen flex flex-col justify-between font-mono overflow-hidden">
-    <button className="h-1/2 text-9xl bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white relative cursor-n-resize">
+  <div className="h-screen flex flex-col justify-between font-mono overflow-hidden text-5xl  sm:text-8xl md:text-9xl">
+    <button className="h-1/2 bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white relative cursor-n-resize">
       <span className="absolute -translate-x-1/2">EUROPE</span>
       <img
         src="./tbilisi.svg"
@@ -24,7 +24,7 @@ const App = () => (
     </div>
 
     <button
-      className="h-1/2 text-9xl relative bg-gradient-to-b from-[#531212] to-red-900 cursor-s-resize"
+      className="h-1/2 relative bg-gradient-to-b from-[#531212] to-red-900 cursor-s-resize"
       style="filter: contrast(3);"
     >
       <div className="relative text-[#FF0000]">
@@ -43,7 +43,7 @@ const App = () => (
       scrolldelay="30"
     >
       <marquee
-        className=" text-white text-5xl -top-6"
+        className=" text-white text-lg  sm:text-2xl md:text-4xl lg:text-5xl -top-6"
         behavior="alternate"
         truespeed="true"
         scrolldelay="30"
