@@ -89,3 +89,23 @@ $speed: 6s;
     transform: translateX(-50%);
   }
 }
+
+.bounce-x {
+  animation: x-bouncing 6s linear infinite alternate;
+}
+
+.bounce-y {
+  animation: y-bouncing 4s linear infinite alternate;
+}
+
+@keyframes x-bouncing {
+  100% {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
+
+@keyframes y-bouncing {
+  100% {
+    transform: translateY(calc(100vh - 100%));
+  }
+}

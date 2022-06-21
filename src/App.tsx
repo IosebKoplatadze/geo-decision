@@ -1,3 +1,4 @@
+import Bounce from './components/Bounce';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -35,23 +36,7 @@ const App = () => (
       </div>
       <img src="./war.svg" className="absolute bottom-0" />
     </button>
-    <marquee
-      className="w-full h-full absolute top-0 left-0 z-20 mix-blend-difference pointer-events-none"
-      behavior="alternate"
-      direction="down"
-      // truespeed="true"
-      // scrolldelay="30"
-    >
-      <marquee
-        className=" text-white text-lg  sm:text-2xl md:text-4xl lg:text-5xl -top-6"
-        behavior="alternate"
-        // scrollamount="3"
-        truespeed="true"
-        scrolldelay="30"
-      >
-        <div className="relative text-[#FF00FF]">What is your decision?</div>
-      </marquee>
-    </marquee>
+    <Bounce>What is your decision?</Bounce>
     <Footer />
   </div>
 );
