@@ -10,7 +10,7 @@ const App: Component = () => {
     <div className="relative h-screen flex flex-col justify-between font-mono overflow-hidden min-h-[640px]">
       <button className="h-1/2 cursor-n-resize ">
         <div className="h-[90%] bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white text-5xl  sm:text-7xl md:text-8xl text-sanet">
-          <div className="h-2/3 w-full tbilisi bg-contain rotate-180 scale-110"></div>
+          <div className="h-2/3 w-full tbilisi bg-contain lg:bg-cover rotate-180 scale-110"></div>
           <span>{t('europe')}</span>
         </div>
         <div class="ocean2">
@@ -46,7 +46,7 @@ const App: Component = () => {
           </div>
         </div>
       </button>
-      <Bounce>{t('whatIsYourDecision?')}</Bounce>
+      <Bounce>{t('whatIsYourDecision')}</Bounce>
       <Footer />
     </div>
   );

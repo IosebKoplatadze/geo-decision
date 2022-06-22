@@ -10,6 +10,7 @@ const dict = {
     USSR: 'სსრკ',
     ByIosebKoplatadze: 'by იოსებ კოპლატაძე',
     IAmGeorgian: 'მე ვარ ქართველი, მაშასადამე ვარ ევროპელი',
+    whatIsYourDecision: 'რა არის შენი არჩევანი?',
   },
   en: {
     europe: 'EUROPE',
@@ -17,6 +18,7 @@ const dict = {
     USSR: 'USSR',
     ByIosebKoplatadze: 'By Ioseb Koplatadze',
     IAmGeorgian: "I'm Georgian, and therefore I am European",
+    whatIsYourDecision: 'What is your Decision?',
   },
 };
 const value = createI18nContext(dict, 'en');
