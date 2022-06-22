@@ -2,6 +2,7 @@ import { useI18n } from '@solid-primitives/i18n';
 import { Component, createSignal } from 'solid-js';
 import Bounce from './components/Bounce';
 import Footer from './components/Footer';
+import GeoMap from './components/GeoMap';
 
 const App: Component = () => {
   const [t, { locale }] = useI18n();
@@ -18,37 +19,57 @@ const App: Component = () => {
         onClick={onSideChange}
         className={
           'cursor-n-resize transition-all ease-linear ' +
-          (side() === 1 ? 'h-[90%]' : side() === -1 ? 'h-[10%]' : 'h-1/2')
+          (side() === 1 ? 'h-[80%]' : side() === -1 ? 'h-[20%]' : 'h-1/2')
         }
       >
-        <div className="h-[90%] bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white text-5xl  sm:text-7xl md:text-8xl text-sanet">
+        <div
+          className={
+            'bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white text-5xl  sm:text-7xl md:text-8xl text-sanet ' +
+            (side() === -1 ? 'h-[60%]' : 'h-[90%]')
+          }
+        >
           {side() !== -1 && (
-            <div className="h-2/3 w-full tbilisi bg-contain lg:bg-cover rotate-180 scale-110"></div>
+            <div className="h-2/3 w-full tbilisi bg-contain rotate-180 scale-110"></div>
           )}
           <span>{t('europe')}</span>
         </div>
-        <div class="ocean2">
-          <div class="wave2"></div>
-          <div class="wave2"></div>
-          <div class="wave2"></div>
+        <div
+          className={
+            'w-full overflow-x-hidden rotate-180 ' +
+            (side() === -1 ? 'h-[40%]' : 'h-[10%]')
+          }
+        >
+          <div className="wave2"></div>
+          <div className="wave2"></div>
+          <div className="wave2"></div>
         </div>
       </button>
-
+      {side() && <GeoMap />}
       <button
         className={
           'cursor-s-resize transition-all ease-linear ' +
-          (side() === -1 ? 'h-[90%]' : side() === 1 ? 'h-[10%]' : 'h-1/2')
+          (side() === -1 ? 'h-[80%]' : side() === 1 ? 'h-[20%]' : 'h-1/2')
         }
         style="filter: contrast(3); line-height: inherit;"
         name="-1"
         onClick={onSideChange}
       >
-        <div class="ocean" style="filter: contrast(3);">
-          <div class="wave"></div>
-          <div class="wave"></div>
-          <div class="wave"></div>
+        <div
+          className={
+            'w-full overflow-x-hidden ' + (side() === 1 ? 'h-[40%]' : 'h-[10%]')
+          }
+          style="filter: contrast(3);"
+        >
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
         </div>
-        <div className="h-[90%] bg-gradient-to-b from-[#531212] to-red-900 flex flex-col-reverse">
+        <div
+          className={
+            'bg-gradient-to-b from-[#531212] to-red-900 flex flex-col-reverse ' +
+            (side() === 1 ? 'h-[60%]' : 'h-[90%]')
+          }
+        >
           {side() !== 1 && (
             <div className="h-2/3 w-full war bg-contain md:bg-cover"></div>
           )}
