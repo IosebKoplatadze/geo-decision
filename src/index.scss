@@ -31,18 +31,15 @@ $speed: 6s;
 }
 
 .ocean {
-  height: 58%;
+  height: 10%;
   width: 100%;
   overflow-x: hidden;
-  position: absolute;
-  bottom: 0;
 }
 
 .ocean2 {
-  height: 58%;
+  height: 10%;
   width: 100%;
   overflow-x: hidden;
-  position: absolute;
   transform: rotate(180deg);
 }
 
@@ -123,4 +120,16 @@ $speed: 6s;
   font-style: normal;
   font-weight: 700;
   src: url('./assets/WiredSaji-68q1.ttf') format('truetype');
+}
+
+.war {
+  background-image: url('./assets/war.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.tbilisi {
+  background-image: url('./assets/tbilisi.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
