@@ -8,7 +8,7 @@ const dict = {
     europe: 'ევროპა',
     oligarchy: 'ოლიგარქია',
     USSR: 'სსრკ',
-    ByIosebKoplatadze: 'by იოსებ კოპლატაძე',
+    ByIosebKoplatadze: 'By იოსებ კოპლატაძე',
     IAmGeorgian: 'მე ვარ ქართველი, მაშასადამე ვარ ევროპელი',
     whatIsYourDecision: 'რა არის შენი არჩევანი?',
   },

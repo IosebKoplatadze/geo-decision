@@ -19,6 +19,7 @@
   "author": "Ioseb Koplatadze",
   "license": "MIT",
   "dependencies": {
+    "@pqina/flip": "^1.7.7",
     "@solid-primitives/i18n": "^1.1.0",
     "alk-sanet": "^1.0.0",
     "parcel-config-pwa-manifest": "^0.1.2",
