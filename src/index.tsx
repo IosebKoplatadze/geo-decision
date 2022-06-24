@@ -52,6 +52,12 @@ const dict = {
     oligarchy17: 'მოსახლეობა მეზობელ ქვეყნებში გარბის',
     oligarchy18:
       'სრული  აღრიცხვით, საქართველოს მოსახლეობა შეადგენს 2.9 მილიონ ადამიანს',
+    finalWord:
+      'შენ გაქვს ძალიან მცირე დრო გადაწყვეტილების მისაღებად, და მხოლოდ 6 თვე სამოქმედოდ, გააკეთე ის რაც შეგიძლია, ჩვენი ქვეყნის მომავალი წყდება ახლა',
+    d: 'დ:',
+    h: 'სთ:',
+    m: 'წთ:',
+    s: 'წმ:',
   },
   en: {
     europe: 'EUROPE',
@@ -77,8 +83,9 @@ const dict = {
       'Abkhazia joins Georgia and the Federal Republic of Georgia is created',
     europe14: 'Samachablo joins Georgia',
     europe15: 'Thousands of immigrants are returning to the country',
-    europe16: 'The population of Georgia reaches 5 million',
-    europe17: 'Triple GDP',
+    europe16: 'Unemployment has reached a record low',
+    europe17: 'The population of Georgia reaches 5 million',
+    europe18: 'Triple GDP',
     oligarchy1: 'WE COULD NOT GET EU CANDIDATE STATUS',
     oligarchy2:
       'DOZENS OF PEOPLE WERE INJURED DURING THE PROTESTS. THE GOVERNMENT BLAMES THE OPPOSITION',
@@ -104,9 +111,15 @@ const dict = {
     oligarchy17: 'THE POPULATION IS FLEEING TO NEIGHBORING COUNTRIES',
     oligarchy18:
       'ACCORDING TO THE FULL CENSUS, THE POPULATION OF GEORGIA IS 2.9 MILLION PEOPLE',
+    finalWord:
+      'You have very little time to make a decision, and only 6 months to act, do what you can, the future of our country is made now, ',
+    d: 'D:',
+    h: 'H:',
+    m: 'M:',
+    s: 'S:',
   },
 };
-const value = createI18nContext(dict, 'en');
+const value = createI18nContext(dict, 'ka');
 
 render(
   () => (

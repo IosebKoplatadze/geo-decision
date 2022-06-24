@@ -3,14 +3,19 @@ import { createSignal, onCleanup, onMount } from 'solid-js';
 import { Decision } from '../App';
 import Flip from './Flip';
 
-const GeoMap = (props: { decision: Decision }) => {
+const GeoMap = (props: { decision: Decision; finished: () => void }) => {
   const [t] = useI18n();
   const [year, setYear] = createSignal(2022);
   let countdown;
 
   onMount(() => {
     countdown = setInterval(() => {
-      setYear((prev) => prev + 1);
+      setYear((prev) => {
+        if (prev === 2039) {
+          props.finished();
+        }
+        return prev + 1;
+      });
     }, 2500);
   });
 

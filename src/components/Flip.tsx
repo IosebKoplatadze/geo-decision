@@ -2,7 +2,7 @@ import Tick from '@pqina/flip';
 import '@pqina/flip/dist/flip.min.css';
 import { createEffect, onCleanup, onMount, ParentComponent } from 'solid-js';
 
-const Flip: ParentComponent<{ className: string }> = (props) => {
+const Flip: ParentComponent<{ className?: string }> = (props) => {
   let _tickRef, _tickInstance;
 
   onMount(() => {
