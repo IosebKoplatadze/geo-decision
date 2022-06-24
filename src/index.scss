@@ -124,6 +124,10 @@ $speed: 6s;
 .map {
   width: 50%;
   background-image: url(./assets/geo_empty.svg);
+  aspect-ratio: 2/1;
+  // position: absolute;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-burn;
 }
 
 .oligarchy {

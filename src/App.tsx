@@ -93,7 +93,7 @@ const App: Component = () => {
           }`}
         >
           {decision() !== Decision.Europe && (
-            <div className="h-2/3 w-full war bg-contain md:bg-cover"></div>
+            <div className="h-2/3 w-full war bg-contain lg:bg-cover"></div>
           )}
 
           {decision() === Decision.Oligarchy ? (
@@ -108,7 +108,7 @@ const App: Component = () => {
           )}
         </div>
       </button>
-      <Bounce>{t('whatIsYourDecision')}</Bounce>
+      {!decision() && <Bounce>{t('whatIsYourDecision')}</Bounce>}
       <Footer />
     </div>
   );

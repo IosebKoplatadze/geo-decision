@@ -19,17 +19,31 @@ const GeoMap = (props: { decision: Decision }) => {
   });
 
   return (
-    <div className="flex flex-col items-center relative">
-      <div className="flex justify-center h-28">
+    <div
+      className={`flex flex-col items-center absolute w-full h-full ${
+        props.decision === Decision.Europe ? '-top-1/2' : 'top-1/2'
+      }`}
+    >
+      <div className="flex justify-center absolute top-1/2  h-full w-full pointer-events-none">
         <Flip
-          className={`mix-blend-color-dodge ${
+          className={`mix-blend-color-dodge text-xs xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${
             props.decision === Decision.Oligarchy && 'oligarchy'
+          } ${
+            props.decision === Decision.Europe
+              ? 'translate-y-1/2'
+              : '-translate-y-1/2'
           }`}
         >
           {year()}
         </Flip>
       </div>
-      <div className="map"></div>
+      <div
+        className={`map ${
+          props.decision === Decision.Europe
+            ? 'translate-y-1/2'
+            : '-translate-y-1/2'
+        }`}
+      ></div>
     </div>
   );
 };
