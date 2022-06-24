@@ -1,9 +1,9 @@
 import { useI18n } from '@solid-primitives/i18n';
 import { Component, createSignal } from 'solid-js';
 import Bounce from './components/Bounce';
-import EuropeHistoryLine from './components/EuropeHistoryLine';
 import Footer from './components/Footer';
 import GeoMap from './components/GeoMap';
+import HistorySteps from './components/HistorySteps';
 
 export enum Decision {
   Oligarchy = -1,
@@ -46,7 +46,7 @@ const App: Component = () => {
           {decision() === Decision.Europe ? (
             <>
               <GeoMap decision={decision()} />
-              <EuropeHistoryLine />
+              <HistorySteps decision={decision()} />
             </>
           ) : (
             <span>{t('europe')}</span>
@@ -72,7 +72,6 @@ const App: Component = () => {
             ? 'h-[15%]'
             : 'h-1/2')
         }
-        // style="filter: contrast(3); line-height: inherit;"
         name={Decision.Oligarchy}
         onClick={onDecisionChange}
       >
@@ -100,7 +99,10 @@ const App: Component = () => {
           )}
 
           {decision() === Decision.Oligarchy ? (
-            <GeoMap decision={decision()} />
+            <>
+              <GeoMap decision={decision()} />
+              <HistorySteps decision={decision()} />
+            </>
           ) : (
             <div className="relative">
               <span className="word">{t('oligarchy')}</span>

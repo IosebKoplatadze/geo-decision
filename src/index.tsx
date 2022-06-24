@@ -26,9 +26,32 @@ const dict = {
     europe13:
       'აფხაზეთი უერთდება საქართველოს და იქმნება საქართველოს ფედერაციული რესპუბლიკა',
     europe14: 'სამაჩაბლო უერთდება საქართველოს',
-    europe15: 'ათასობით ემიგრანტები ბრუნდებიან ქვეყანაში',
-    europe16: 'საქართველოს მოსახლეობა აღწევს 5 მილიონს',
-    europe17: 'გასამმაგებული მშპ',
+    europe15: 'ათასობით ემიგრანტი ბრუნდება ქვეყანაში',
+    europe16: 'უმუშევრობამ მიაღწია რეკორდულ მინიმუმს',
+    europe17: 'საქართველოს მოსახლეობა აღწევს 5 მილიონს',
+    europe18: 'გასამმაგებული მშპ',
+    oligarchy1: 'არ მოგვცეს ევროკავშირის კანდიდატის სტატუსი',
+    oligarchy2:
+      'აქციების დროს ათობით ადამიანი დასახიჩრდა, მთავრობა ოპოზიციაას ადანაშაულებს',
+    oligarchy3: 'გაყალბაბული საპარლამენტო არჩევნები',
+    oligarchy4: 'საკონსტიტუციო უმრავლესობა ერთი პარტიის ხელში',
+    oligarchy5: 'სამხრეთ ოსეთში ტარდება რეფერენდუმი რუსეთთან მიერთების შესახებ',
+    oligarchy6: 'სამხრეთ ოსეთი უერთდება რუსეთს',
+    oligarchy7: 'ინფლაქციამ მიაღწია ისტორიულ მაქსიმუმს',
+    oligarchy8: 'ხალხი უშედეგოდ აპროტესტებს გაუსაძლის სოციალურ მდგომარეობას',
+    oligarchy9: 'ათი-ათასობით ადამიანი ტოვებს ყოველწლიურად საქართველოს',
+    oligarchy10: 'აფხაზეთი უერთდება რუსეთს',
+    oligarchy11: 'ქვეყანაში კვლავ არეულობაა, სპეცრაზმი ხალხს არბევს',
+    oligarchy12: 'უკრაინა ხდება NATO-ს წევრი',
+    oligarchy13:
+      'ოკუპირებულ ტერიტორიებზე(რუსეთი) იწყება ფართო მასშტაბიანი სამხედრო წვრთნები',
+    oligarchy14: 'რუსული ტანკები შედიან ერთდროულად ონში და სტეფანწმინდაში',
+    oligarchy15: 'მთავრობა უმოქმედოდაა, მოსახლეობა იწყებს პარტიზანულ ომს',
+    oligarchy16:
+      'თბილისი დაეცა, პარლამენტის შენობასთან ასობით ადამიანის გვამია',
+    oligarchy17: 'მოსახლეობა მეზობელ ქვეყნებში გარბის',
+    oligarchy18:
+      'სრული  აღრიცხვით, საქართველოს მოსახლეობა შეადგენს 2.9 მილიონ ადამიანს',
   },
   en: {
     europe: 'EUROPE',
@@ -56,6 +79,31 @@ const dict = {
     europe15: 'Thousands of immigrants are returning to the country',
     europe16: 'The population of Georgia reaches 5 million',
     europe17: 'Triple GDP',
+    oligarchy1: 'WE COULD NOT GET EU CANDIDATE STATUS',
+    oligarchy2:
+      'DOZENS OF PEOPLE WERE INJURED DURING THE PROTESTS. THE GOVERNMENT BLAMES THE OPPOSITION',
+    oligarchy3: 'RIGGED PARLIAMENTARY ELECTIONS',
+    oligarchy4: 'THE CONSTITUTIONAL MAJORITY IS IN THE HANDS OF ONE PARTY',
+    oligarchy5: 'SOUTH OSSETIA HOLDS REFERENDUM ON JOINING RUSSIA',
+    oligarchy6: 'SOUTH OSSETIA JOINS RUSSIA',
+    oligarchy7: 'INFLATION HAS REACHED AN ALL-TIME HIGH',
+    oligarchy8:
+      'PEOPLE ARE PROTESTING IN VAIN AGAINST THE UNBEARABLE SOCIAL SITUATION',
+    oligarchy9: 'TENS OF THOUSANDS OF PEOPLE LEAVE GEORGIA EVERY YEAR',
+    oligarchy10: 'ABKHAZIA JOINS RUSSIA',
+    oligarchy11:
+      'THERE IS STILL UNREST IN THE COUNTRY, THE SPECIAL FORCES ARE BOTHERING THE POPULATION',
+    oligarchy12: 'UKRAINE BECOMES A MEMBER OF NATO',
+    oligarchy13:
+      'LARGE-SCALE MILITARY EXERCISES BEGIN IN THE OCCUPIED TERRITORIES (RUSSIA)',
+    oligarchy14: 'RUSSIAN TANKS ENTER ONI AND STEPHANTSMINDA AT THE SAME TIME',
+    oligarchy15:
+      'THE GOVERNMENT IS INACTIVE, THE POPULATION STARTS A PARTISAN WAR',
+    oligarchy16:
+      'TBILISI FELL, THE CORPSES OF HUNDREDS OF PEOPLE NEAR THE PARLIAMENT BUILDING',
+    oligarchy17: 'THE POPULATION IS FLEEING TO NEIGHBORING COUNTRIES',
+    oligarchy18:
+      'ACCORDING TO THE FULL CENSUS, THE POPULATION OF GEORGIA IS 2.9 MILLION PEOPLE',
   },
 };
 const value = createI18nContext(dict, 'en');
