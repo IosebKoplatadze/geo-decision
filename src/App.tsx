@@ -19,7 +19,7 @@ const App: Component = () => {
   };
 
   return (
-    <div className="relative h-screen flex flex-col justify-between font-mono overflow-hidden min-h-[640px]">
+    <div className="relative h-screen flex flex-col justify-between font-mono overflow-hidden">
       <button
         name="1"
         onClick={onDecisionChange}
