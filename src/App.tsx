@@ -21,7 +21,7 @@ const App: Component = () => {
   return (
     <div className="relative h-screen flex flex-col justify-between font-mono overflow-hidden">
       <button
-        name="1"
+        name={Decision.Europe}
         onClick={onDecisionChange}
         className={
           'cursor-n-resize transition-all ease-linear ' +
@@ -68,8 +68,8 @@ const App: Component = () => {
             ? 'h-[15%]'
             : 'h-1/2')
         }
-        style="filter: contrast(3); line-height: inherit;"
-        name="-1"
+        // style="filter: contrast(3); line-height: inherit;"
+        name={Decision.Oligarchy}
         onClick={onDecisionChange}
       >
         <div
@@ -83,7 +83,7 @@ const App: Component = () => {
           <div className="wave"></div>
         </div>
         <div
-          className={`bg-gradient-to-b from-[#531212] to-red-900 flex flex-col-reverse text-[#FF0000] 
+          className={`bg-gradient-to-b to-[#531212] from-black flex flex-col-reverse text-[#FF0000] 
           ${decision() === Decision.Europe ? 'h-[70%]' : 'h-[90%]'} 
           ${
             locale() === 'ka' || decision() === Decision.Oligarchy
