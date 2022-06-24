@@ -134,5 +134,10 @@ $speed: 6s;
 .oligarchy {
   .tick-flip-panel {
     color: red !important;
+    font-family: 'BARBEDWIRE', sans-serif;
   }
+}
+
+.line-inherit {
+  line-height: initial !important;
 }
