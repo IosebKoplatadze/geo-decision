@@ -6,6 +6,7 @@ $speed: 6s;
 
 * {
   user-select: none;
+  box-sizing: border-box;
 }
 
 .word {
@@ -110,7 +111,7 @@ $speed: 6s;
   font-family: 'BARBEDWIRE';
   src: url('./assets/wiredsaji-68q1-webfont.woff2') format('woff2'),
     url('./assets/wiredsaji-68q1-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 

@@ -7,14 +7,18 @@ const LangSwitcher = () => {
     locale(target.name);
   };
   return (
-    <div className="z-30 rotate-90 pointer-events-auto">
-      <button name="en" onClick={onLangChange}>
-        EN
-      </button>
-      |
-      <button className="text-sanet" name="ka" onClick={onLangChange}>
-        ქა
-      </button>
+    <div className="z-30 rotate-90 pointer-events-auto p-2">
+      {locale() !== 'en' && (
+        <button name="en" onClick={onLangChange}>
+          EN
+        </button>
+      )}
+
+      {locale() !== 'ka' && (
+        <button className="text-sanet" name="ka" onClick={onLangChange}>
+          ქა
+        </button>
+      )}
     </div>
   );
 };
