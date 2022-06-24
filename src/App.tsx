@@ -1,6 +1,7 @@
 import { useI18n } from '@solid-primitives/i18n';
 import { Component, createSignal } from 'solid-js';
 import Bounce from './components/Bounce';
+import EuropeHistoryLine from './components/EuropeHistoryLine';
 import Footer from './components/Footer';
 import GeoMap from './components/GeoMap';
 
@@ -43,7 +44,10 @@ const App: Component = () => {
           )}
 
           {decision() === Decision.Europe ? (
-            <GeoMap decision={decision()} />
+            <>
+              <GeoMap decision={decision()} />
+              <EuropeHistoryLine />
+            </>
           ) : (
             <span>{t('europe')}</span>
           )}

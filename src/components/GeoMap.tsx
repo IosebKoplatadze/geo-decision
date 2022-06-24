@@ -11,7 +11,7 @@ const GeoMap = (props: { decision: Decision }) => {
   onMount(() => {
     countdown = setInterval(() => {
       setYear((prev) => prev + 1);
-    }, 2000);
+    }, 4000);
   });
 
   onCleanup(() => {
@@ -27,7 +27,7 @@ const GeoMap = (props: { decision: Decision }) => {
       <div className="relative flex justify-center w-full h-full">
         <div className="flex justify-center absolute h-full pointer-events-none">
           <Flip
-            className={`line-inherit mix-blend-color-dodge text-sm xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl translate-y-1/2 ${
+            className={`line-inherit mix-blend-color-dodge text-2xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl translate-y-1/2 ${
               props.decision === Decision.Oligarchy && 'oligarchy'
             }`}
           >
