@@ -11,7 +11,7 @@ const GeoMap = (props: { decision: Decision }) => {
   onMount(() => {
     countdown = setInterval(() => {
       setYear((prev) => prev + 1);
-    }, 4000);
+    }, 2500);
   });
 
   onCleanup(() => {

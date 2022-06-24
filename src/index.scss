@@ -144,16 +144,16 @@ $speed: 6s;
   }
 }
 
-$flip-speed: 4s;
-$flip-count: 5;
+$flip-speed: 2.5s;
+$flip-count: 17;
 
 .flip {
   span {
-    animation: flip 4s ease-in-out;
+    animation: flip $flip-speed ease-in-out;
     animation-fill-mode: both;
     height: 0;
 
-    @for $i from 1 through $flip-count {
+    @for $i from 0 through $flip-count {
       &:nth-child(#{$i}) {
         animation-delay: $flip-speed * ($i - 1);
       }
