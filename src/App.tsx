@@ -26,16 +26,16 @@ const App: Component = () => {
         className={
           'cursor-n-resize transition-all ease-linear ' +
           (decision() === Decision.Europe
-            ? 'h-[80%]'
+            ? 'h-[85%]'
             : decision() === Decision.Oligarchy
-            ? 'h-[20%]'
+            ? 'h-[15%]'
             : 'h-1/2')
         }
       >
         <div
           className={
             'bg-gradient-to-t from-[#91bdf5] to-indigo-900 text-white text-5xl  sm:text-7xl md:text-8xl text-sanet ' +
-            (decision() === Decision.Oligarchy ? 'h-[60%]' : 'h-[90%]')
+            (decision() === Decision.Oligarchy ? 'h-[70%]' : 'h-[90%]')
           }
         >
           {decision() !== Decision.Oligarchy && (
@@ -51,7 +51,7 @@ const App: Component = () => {
         <div
           className={
             'w-full overflow-x-hidden rotate-180 ' +
-            (decision() === Decision.Oligarchy ? 'h-[40%]' : 'h-[10%]')
+            (decision() === Decision.Oligarchy ? 'h-[30%]' : 'h-[10%]')
           }
         >
           <div className="wave2"></div>
@@ -63,9 +63,9 @@ const App: Component = () => {
         className={
           'cursor-s-resize transition-all ease-linear ' +
           (decision() === Decision.Oligarchy
-            ? 'h-[80%]'
+            ? 'h-[85%]'
             : decision() === Decision.Europe
-            ? 'h-[20%]'
+            ? 'h-[15%]'
             : 'h-1/2')
         }
         style="filter: contrast(3); line-height: inherit;"
@@ -74,10 +74,9 @@ const App: Component = () => {
       >
         <div
           className={
-            'w-full overflow-x-hidden ' +
-            (decision() === Decision.Europe ? 'h-[40%]' : 'h-[10%]')
+            'w-full overflow-x-hidden relative ' +
+            (decision() === Decision.Europe ? 'h-[30%]' : 'h-[10%]')
           }
-          style="filter: contrast(3);"
         >
           <div className="wave"></div>
           <div className="wave"></div>
@@ -85,7 +84,7 @@ const App: Component = () => {
         </div>
         <div
           className={`bg-gradient-to-b from-[#531212] to-red-900 flex flex-col-reverse text-[#FF0000] 
-          ${decision() === Decision.Europe ? 'h-[60%]' : 'h-[90%]'} 
+          ${decision() === Decision.Europe ? 'h-[70%]' : 'h-[90%]'} 
           ${
             locale() === 'ka' || decision() === Decision.Oligarchy
               ? 'text-sanet text-5xl sm:text-7xl md:text-8xl'
