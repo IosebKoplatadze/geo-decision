@@ -3,7 +3,7 @@ import { For } from 'solid-js';
 import { Decision } from '../App';
 
 const HistorySteps = (props: { decision: Decision }) => {
-  const [t, { locale }] = useI18n();
+  const [t] = useI18n();
   const steps = [...Array(18).keys()].map((i) => i + 1);
 
   return (

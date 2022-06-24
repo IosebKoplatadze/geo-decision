@@ -39,7 +39,7 @@ const FinalWord = () => {
   update();
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center text-sanet bg-black text-white text-xl sm:text-3xl md:text-4xl finished">
+    <div className="w-full h-full flex flex-col justify-center items-center text-sanet bg-black text-white text-lg sm:text-2xl md:text-3xl lg:text-3xl finished">
       <div className="h-2/3 w-full tbilisi bg-contain rotate-180 scale-110"></div>
       <span className="text-center px-14 sm:px-16 lg:px-20">
         {t('finalWord')}
