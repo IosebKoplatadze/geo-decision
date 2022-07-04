@@ -1,28 +1,22 @@
-
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
 
 # Geo Decision
 
 Georgian people decision
 
-
 ## Demo
 
-TODO
-
+- [https://iosebkoplatadze.github.io/geo-decision/](https://iosebkoplatadze.github.io/geo-decision/)
 
 ## Authors
 
 - [@Ioseb Koplatadze](https://github.com/IosebKoplatadze)
-
 
 ## Tech Stack
 
 **Client:** React, Redux, TailwindCSS
 
 **Server:** Node, Express
-
 
 ## Run Locally
 
@@ -50,13 +44,10 @@ Start the server
   npm run start
 ```
 
-
 ## Contributing
 
 Contributions are always welcome!
 
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
